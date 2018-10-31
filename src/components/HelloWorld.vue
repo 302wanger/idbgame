@@ -9,7 +9,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '这个产品经理需要自学设计！'
+      msg: '这个产品经理需要自学！'
     }
   }
 }
