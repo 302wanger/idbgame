@@ -1,22 +1,25 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-    <el-input-number v-model="num1"
-                     @change="handleChange"
-                     :min="1"
-                     :max="10"
-                     label="描述文字"></el-input-number>
-    <h2>hello world</h2>
+  <div class="page-warpper">
+    <div class="nav">
+      <Nav></Nav>
+    </div>
+    <div class="content">
+      <h1>{{ msg }}</h1>
+    </div>
+    <div class="footer">
+      <Foot-content></Foot-content>
+    </div>
   </div>
 </template>
 
 <script>
-import { InputNumber } from 'element-ui'
-
+import Nav from '../../components/Nav/index'
+import FootContent from '../../components/FootContent/index'
 export default {
   name: 'Home',
   components: {
-    InputNumber
+    Nav,
+    FootContent
   },
   data () {
     return {
