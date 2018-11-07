@@ -1,22 +1,19 @@
 <template>
   <div class="hello">
+    <Nav></Nav>
     <h1>{{ msg }}</h1>
-    <el-input-number v-model="num1"
-                     @change="handleChange"
-                     :min="1"
-                     :max="10"
-                     label="描述文字"></el-input-number>
-    <h2>hello world</h2>
+    <Foot-content></Foot-content>
   </div>
 </template>
 
 <script>
-import { InputNumber } from 'element-ui'
-
+import Nav from '../../components/Nav/index'
+import FootContent from '../../components/FootContent/index'
 export default {
   name: 'Home',
   components: {
-    InputNumber
+    Nav,
+    FootContent
   },
   data () {
     return {
