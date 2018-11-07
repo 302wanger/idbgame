@@ -1,8 +1,14 @@
 <template>
-  <div class="hello">
-    <Nav></Nav>
-    <h1>{{ msg }}</h1>
-    <Foot-content></Foot-content>
+  <div class="page-warpper">
+    <div class="nav">
+      <Nav></Nav>
+    </div>
+    <div class="content">
+      <h1>{{ msg }}</h1>
+    </div>
+    <div class="footer">
+      <Foot-content></Foot-content>
+    </div>
   </div>
 </template>
 
